@@ -2,9 +2,9 @@ services:
   web:
     build: .
     volumes:
-      - /images:/image_volumes
+      - ./images:/image_volumes
 
   test-volumes:
     image: busybox
     volumes:
-      - /images:/image_volumes
+      - ./images:/image_volumes
